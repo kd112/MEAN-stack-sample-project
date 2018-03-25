@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const Video = require('../models/video');
+const Config = require('../../config.json')
 
-const db = "mongodb://adminRahul:Saphira071112@ds121309.mlab.com:21309/videoplayer";
+const db = `mongodb://${Config.authenticate.user}:${Config.authenticate.password}@${Config.uri}`;
 mongoose.Promise = global.Promise;
 
 mongoose.connect(db,(err) => {
