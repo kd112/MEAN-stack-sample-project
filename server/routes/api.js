@@ -61,7 +61,7 @@ router.put('/videos/:id',(req,res) =>{
 			url:req.body.url,
 			description:req.body.description
 		}
-	}),
+	},
 	{new:true},
 	(err,updatedvideo) =>{
 		if(err){
@@ -69,7 +69,7 @@ router.put('/videos/:id',(req,res) =>{
 		}else{
 			res.json(updatedvideo)
 		}
-	}
+	});
 
 })
 
