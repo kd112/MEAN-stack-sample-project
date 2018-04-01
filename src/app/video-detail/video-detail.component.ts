@@ -10,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoDetailComponent implements OnInit {
 
+  private editTitle:boolean=false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngOnChanges(){
+  	this.editTitle = false;
+  }
+  onTitleClick(){
+  	console.log("title click")
+  	this.editTitle=true;
+  }
 }
