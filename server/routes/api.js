@@ -3,7 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const Video = require('../models/video');
 const Config = require('../../config.json')
-
+console.log(`mongodb://${Config.authenticate.user}:${Config.authenticate.password}@${Config.uri}`)
 const db = `mongodb://${Config.authenticate.user}:${Config.authenticate.password}@${Config.uri}`;
 mongoose.Promise = global.Promise;
 
