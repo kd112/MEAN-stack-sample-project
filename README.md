@@ -40,7 +40,7 @@ Navigate to `http://localhost:3000` to view the application
 ## To Do
   * Handle Youtube urls which cannot be embedded.
   * Create a search bar to search the video list
-  * Style the web page further
+  * Style the web page further - Make it more responsive.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
