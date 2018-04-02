@@ -1,27 +1,42 @@
-# NgApp
+# Video APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
-
+First Venture into full stack devops. This project follows the MEAN stack 
+Clone the repository to destination either by download the zip file of the repository or clone the repository using 
+```git clone -b develop https://github.com/kd112/MEAN-stack-sample-project.git
+```
+To modify the angular front end , install the angular client
+```
+npm i g @angular/cli
+```
+Open the command line and cd into the directory
+```
+    cd MEAN-stack-sample-project
+```
 ## Development server
+##Requirements
+..* Create a file called config.json placed in the root directory
+        Structure:
+        ```javascript
+            {"authenticate":{
+            "user":"username",
+            "password":"password"
+            },
+            "uri":"uri"
+        }
+        ```
+..* Run `npm install ` to install all dependencies.
+### Start Server
+```javascript
+        node server.js
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to `http://localhost:3000` to view the application
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
+## Modifying the Application
+    ###Modifying the Express backend
+    ..* Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
+    ###Modifying the Angular Front End
+    ..* Run `ng build` to recompile the front end with the new changes
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
