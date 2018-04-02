@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter } from '@angular/core';
 // import {DomSanitizer,SafeUrl} from '@angular/platform-browser';
 
 
@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   selector: 'video-detail',
   templateUrl: './video-detail.component.html',
   styleUrls: ['./video-detail.component.css'],
-  inputs:['video']
+  inputs:['video'],
+  outputs:['updateVideoEvent','deleteVideoEvent']
 })
 export class VideoDetailComponent implements OnInit {
 
   private editTitle:boolean=false;
+  private updateVideoEvent = new EventEmitter();
+  private deleteVideoEvent = new EventEmitter()
+  private video :any;
+  // video:any;
   // static get parameters(){
   //   return[DomSanitizationService]
   // }
@@ -26,6 +31,16 @@ export class VideoDetailComponent implements OnInit {
   onTitleClick(){
   	console.log("title click")
   	this.editTitle=true;
+  }
+
+  updateVideo(){ 
+    console.log(this.video)
+    this.updateVideoEvent.emit(this.video);
+  }
+
+  deleteVideo(){
+    console.log("delete event")
+    this.deleteVideoEvent.emit(this.video)
   }
   // sanitizeUrl(url:any){
   //   console.log(url)
