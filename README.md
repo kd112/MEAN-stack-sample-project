@@ -34,13 +34,13 @@ Navigate to `http://localhost:3000` to view the application
 
 ## Modifying the Application
 ### Modifying the Express backend
-    * Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
+  * Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
 ### Modifying the Angular Front End
-    * Run `ng build` to recompile the front end with the new changes
+  * Run `ng build` to recompile the front end with the new changes
 ## To Do
-    * Handle Youtube urls which cannot be embedded.
-    * Create a search bar to search the video list
-    * Style the web page further
+  * Handle Youtube urls which cannot be embedded.
+  * Create a search bar to search the video list
+  * Style the web page further
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
