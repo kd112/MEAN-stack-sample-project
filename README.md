@@ -13,30 +13,29 @@ Open the command line and cd into the directory
     cd MEAN-stack-sample-project
 ```
 ## Development server
-##Requirements
-..* Create a file called config.json placed in the root directory
-        Structure:
-        ```javascript
+## Requirements
+  * Create a file called `config.json` placed in the root directory.
+  ```
             {"authenticate":{
             "user":"username",
             "password":"password"
             },
             "uri":"uri"
         }
-        ```
-..* Run `npm install ` to install all dependencies.
+   ```
+  * Run `npm install ` to install all dependencies.
 ### Start Server
-```javascript
+```
         node server.js
 ```
 
 Navigate to `http://localhost:3000` to view the application
 
 ## Modifying the Application
-    ###Modifying the Express backend
-    ..* Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
-    ###Modifying the Angular Front End
-    ..* Run `ng build` to recompile the front end with the new changes
+    ### Modifying the Express backend
+      * Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
+    ### Modifying the Angular Front End
+      * Run `ng build` to recompile the front end with the new changes
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
