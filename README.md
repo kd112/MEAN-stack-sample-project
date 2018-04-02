@@ -23,7 +23,8 @@ Open the command line and cd into the directory
             "uri":"uri"
         }
    ```
-  * Run `npm install ` to install all dependencies.
+  * Run `npm install` to install all dependencies.
+
 ### Start Server
 ```
         node server.js
@@ -32,10 +33,14 @@ Open the command line and cd into the directory
 Navigate to `http://localhost:3000` to view the application
 
 ## Modifying the Application
-    ### Modifying the Express backend
-      * Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
-    ### Modifying the Angular Front End
-      * Run `ng build` to recompile the front end with the new changes
+### Modifying the Express backend
+    * Run `ctr C or command C` to stop the application and run `node server.js` to restart the application with the new modification
+### Modifying the Angular Front End
+    * Run `ng build` to recompile the front end with the new changes
+## To Do
+    * Handle Youtube urls which cannot be embedded.
+    * Create a search bar to search the video list
+    * Style the web page further
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
