@@ -41,8 +41,11 @@ router.post('/videos',(req,res) =>{
 	console.log("Post a video");
 	let newVideo = new Video();
 	newVideo.title = req.body.title;
-	newVideo.url = req.body.url;
+	let url = req.body.url
+	newVideo.url = validateurl(req.body.url);
 	newVideo.description = req.body.description;
+	console.log(newVideo.url)
+	
 
 	newVideo.save((err,newvideo) => {
 		if(err){
@@ -83,5 +86,22 @@ router.delete('/videos/:id',(req,res) =>{
 		}
 	})
 })
+
+function validateurl(url){
+	console.log(url)
+	let regex = /https\:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})/;
+	let embed_url='https://www.youtube.com/embed/';
+	let match_url = url.match(regex)
+	if (match_url){
+		if (match_url.length>0){
+		let v_id = match_url[1]
+		return `${embed_url}${v_id}`	
+	}	
+	}
+	
+	console.log(url)
+	return url
+	
+}
 
 module.exports = router;
