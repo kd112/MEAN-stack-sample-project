@@ -2,7 +2,8 @@
 
 First Venture into full stack devops. This project follows the MEAN stack 
 Clone the repository to destination either by download the zip file of the repository or clone the repository using 
-```git clone -b develop https://github.com/kd112/MEAN-stack-sample-project.git
+```
+git clone -b develop https://github.com/kd112/MEAN-stack-sample-project.git
 ```
 To modify the angular front end , install the angular client
 ```
@@ -29,8 +30,11 @@ Open the command line and cd into the directory
 ```
         node server.js
 ```
+  * The port can be specified by running`export PORT=3002` on mac or linux or 
+  `set PORT=3002` on windows to change the port number. Default port is 3000
 
-Navigate to `http://localhost:3000` to view the application
+  * Navigate to `http://localhost:3000` to view the application
+
 
 ## Modifying the Application
 ### Modifying the Express backend
