@@ -3,7 +3,7 @@
 First Venture into full stack devops. This project follows the MEAN stack 
 Clone the repository to destination either by download the zip file of the repository or clone the repository using 
 ```
-git clone -b develop https://github.com/kd112/MEAN-stack-sample-project.git
+git clone https://github.com/kd112/MEAN-stack-sample-project.git
 ```
 To modify the angular front end , install the angular client
 ```
