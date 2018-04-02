@@ -14,7 +14,15 @@ export class VideoCenterComponent implements OnInit {
   constructor(private _videoService:VideoService) { }
   // private _videoService = new VideoService()
   ngOnInit() {
-  	this._videoService.getVideos().subscribe(resVideoData => this.videos = resVideoData);
+    console.log("init")
+  	this._videoService.getVideos().subscribe(resVideoData => {
+      this.videos = resVideoData
+      let video;
+      video = this.videos[0]
+      this.selectedVideo  = video ;
+      
+      });
+    // if(!this.selectedVideo){console.log("Here")}
   }
   onSelectVideo(video:any){
 		this.selectedVideo =video;

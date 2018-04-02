@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {form}
+// import {DomSanitizer,SafeUrl} from '@angular/platform-browser';
 
 
 @Component({
@@ -11,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class VideoDetailComponent implements OnInit {
 
   private editTitle:boolean=false;
-  constructor() { }
+  // static get parameters(){
+  //   return[DomSanitizationService]
+  // }
+  constructor() {}
+  // this.sanitizer = sanitizer; }
 
   ngOnInit() {
   }
@@ -23,4 +27,10 @@ export class VideoDetailComponent implements OnInit {
   	console.log("title click")
   	this.editTitle=true;
   }
+  // sanitizeUrl(url:any){
+  //   console.log(url)
+  //   let safeurl = this._sanitizationService.bypassSecurityTrustResourceUrl(url)
+  //   console.log(safeurl)
+  //   return safeurl
+  // }
 }

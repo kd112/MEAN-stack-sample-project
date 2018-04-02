@@ -10,6 +10,7 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { FormsModule } from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import { SafePipe } from './safe.pipe';
 // import {Http} from '@angular/http';
 // import {Response} from '@angular/http';
 
@@ -20,7 +21,8 @@ import {HttpModule} from '@angular/http';
     HomeComponent,
     VideoCenterComponent,
     VideoListComponent,
-    VideoDetailComponent
+    VideoDetailComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
